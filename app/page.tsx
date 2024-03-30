@@ -36,11 +36,11 @@ export default function Home() {
       </div>
       <div className="flex items-center bg-gray-200/80">
         {/* Image Section */}
-        <div className="w-1/2 mt-20 flex justify-center items-center">
+        <div className="w-1/2 my-20 flex justify-center items-center">
           <Image src="/about-us.jpg" alt="Hero" width={600} height={600} />
         </div>
         {/* Content Container */}
-        <div className="w-1/2 flex justify-between px-2 z-10 mt-3">
+        <div className="w-1/2 flex my-20 justify-between px-2 z-10">
           <div className="w-full flex flex-col justify-center items-start">
             <h1 className="text-xl uppercase mb-5 text-green-900 tracking-wider">
               About Us
@@ -56,7 +56,7 @@ export default function Home() {
               extensions, we offer companies a pathway to flexibility without
               compromising security.
             </p>
-            <p className="text-[15px] text-gray-700/80">
+            <p className="text-[15px] text-gray-700/80 mb-10">
               With our extensive experience in labor mediation, we are a
               reliable partner for both employers and job seekers. Our approach
               is selective; we strive for a match based not only on knowledge
@@ -65,6 +65,83 @@ export default function Home() {
               us to establish sustainable and successful collaborations with a
               focus on long-term engagement.
             </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 className="text-4xl font-extrabold text-center py-20">
+          Services we offer
+        </h1>
+        <div className="flex pb-20 space-x-24 flex-wrap items-center justify-center">
+          <div className="w-72 text-center flex space-y-6 flex-col items-center justify-center">
+            <Image
+              src="/icons_website-01.png"
+              alt="Icon 1"
+              width={100}
+              height={24}
+            />
+            <h1 className="font-bold text-2xl">Employer of record services</h1>
+            <p className="text-sm leading-7">
+              Hire staff abroad compliantly without the need to set up a foreign
+              entity via our employer of record solutions.
+            </p>
+          </div>
+          <div className="w-[296px] text-center flex space-y-6 flex-col items-center justify-center">
+            <Image
+              src="/icons_website-03.png"
+              alt="Icon 1"
+              width={100}
+              height={24}
+            />
+            <h1 className="font-bold text-2xl">Payroll services</h1>
+            <p className="text-sm leading-7">
+              We can help you with paying out your staff members compliantly and
+              in time. Experience combined with the best software in the market.
+              We will get the job done.
+            </p>
+          </div>
+          <div className="w-72 text-center flex space-y-6 flex-col items-center justify-center">
+            <Image
+              src="/icons_website-02.png"
+              alt="Icon 1"
+              width={100}
+              height={24}
+            />
+            <h1 className="font-bold text-2xl">Work permits</h1>
+            <p className="text-sm leading-7">
+              Do you need assistance in obtaining work permits for your
+              international staff members? We have fast-track solutions as a
+              sponsor at the local authorities.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-gray-200/80 text-white">
+        <div className="flex space-x-10 flex-wrap items-center justify-center">
+          <div className="w-[610px] my-24 py-24 px-10 bg-[#f15a23] rounded-lg p-8 flex flex-col">
+            <h1 className="text-5xl font-bold">Flip van Griensven</h1>
+            <p className="text-xl leading-8 font-bold mt-5">0611837746</p>
+            <p className="text-xl leading-8 font-bold mt-2">flip@flipjobs.nl</p>
+          </div>
+          <div className="w-[610px] bg-[#1a1164] rounded-lg flex px-7">
+            <div className="flex flex-col items-center justify-center">
+              <h1 className="text-[26px] font-bold">FOLLOW US ON LINKEDIN</h1>
+              <Image
+                src="/linkedin.png"
+                alt="Linkedin"
+                width={70}
+                height={70}
+                className="mt-3"
+              />
+            </div>
+            <div className="ml-7">
+              <Image
+                src="/flipjob_person.png"
+                alt="Hero"
+                width={200}
+                height={200}
+              />
+            </div>
           </div>
         </div>
       </div>
