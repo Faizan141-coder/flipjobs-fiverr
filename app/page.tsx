@@ -218,7 +218,7 @@ export default function Home() {
                 />
                 <input
                   type="email"
-                  className="px-4 text-black h-10 rounded-lg mt-3.5"
+                  className="px-4 text-black h-10 rounded-lg mt-3"
                 />
               </div>
             </div>
