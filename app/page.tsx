@@ -16,15 +16,15 @@ export default function Home() {
   return (
     <>
       {/* @Top Section */}
-      <LandingPage />
+      {/* <LandingPage /> */}
       {/* @About Us */}
       <AboutUs />
       {/* @Services */}
-      <Services />
+      {/* <Services /> */}
       {/* @Contact */}
-      <Contact />
+      {/* <Contact /> */}
       {/* @Newsletter */}
-      <NewsLetter />
+      {/* <NewsLetter /> */}
     </>
   );
 }
