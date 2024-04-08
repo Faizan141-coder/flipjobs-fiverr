@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "EOR Agency",
-  description: "As an Employer of Record (EOR), the EOR Agency specializes in alleviating the administrative burden from your company. We offer various solutions to achieve this goal. By assuming responsibility for the global employment of your staff, we aim to save you valuable time, money, and resources.",
+  description:
+    "As an Employer of Record (EOR), the EOR Agency specializes in alleviating the administrative burden from your company. We offer various solutions to achieve this goal. By assuming responsibility for the global employment of your staff, we aim to save you valuable time, money, and resources.",
 };
 
 export default function RootLayout({
@@ -19,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         <Footer />
       </body>
