@@ -33,7 +33,7 @@ const NewsLetter = () => {
               <label htmlFor="email">Company name</label>
               <Input
                 type="text"
-                className="px-4 text-black w-full h-10 rounded-lg mt-4"
+                className="w-full px-3 py-2 border bg-gray-100 text-black rounded-lg placeholder-gray-900 focus:outline-none border-gray-400"
               />
             </div>
 
