@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Input } from "./ui/input";
 
 const NewsLetter = () => {
   return (
@@ -19,28 +20,28 @@ const NewsLetter = () => {
         </div>
 
         {/* Text Section */}
-        <div className="lg:w-1/2 lg:text-start md:text-start sm:text-start text-center sm:w-full flex flex-col justify-center items-start text-white">
-          <h1 className="text-5xl leading-tight font-bold mb-4">
+        <div className="lg:w-1/2 md:w-full lg:text-start md:text-start sm:text-start text-center sm:w-full w-full flex flex-col justify-center items-start text-white">
+          <h1 className="text-5xl  leading-tight font-bold mb-4">
             Want to learn more?
           </h1>
           <p className="text-sm text-gray-200 mb-4">
             Reach out today to book a free consultation with our expert team.
             Get helpful insights and start your journey to success.
           </p>
-          <div className="flex flex-col">
-            <div className="flex flex-col space-y-3 mt-6">
+          <div className="flex flex-row w-full space-x-5 lg:flex-row lg:space-x-5 md:space-x-5 sm:space-x-5 md:flex-row sm:flex-row">
+            <div className="space-y-3 mt-6">
               <label htmlFor="email">Company name</label>
-              <input
+              <Input
                 type="text"
                 className="px-4 text-black w-full h-10 rounded-lg mt-4"
               />
             </div>
 
-            <div className="flex flex-col space-y-3 mt-6">
+            <div className="space-y-3 mt-6">
               <label htmlFor="email">Email address</label>
-              <input
+              <Input
                 type="email"
-                className="px-4 text-black h-10 rounded-lg mt-3"
+                className="w-full px-3 py-2 border bg-gray-100 text-black rounded-lg placeholder-gray-900 focus:outline-none border-gray-400"
               />
             </div>
           </div>
