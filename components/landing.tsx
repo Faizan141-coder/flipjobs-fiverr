@@ -10,10 +10,10 @@ const LandingPage = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-[#231787] opacity-90"></div>
 
       {/* Content Container */}
-      <div className="relative w-full flex justify-between px-8 z-10">
+      <div className="relative w-full flex lg:flex-row md:flex-row sm:flex-row flex-col justify-between px-8 z-10">
         {/* Text Section */}
-        <div className="lg:w-1/2 sm:w-full flex flex-col justify-center items-start">
-          <h1 className="text-white text-4xl leading-snug font-bold mb-4">
+        <div className="lg:w-1/2 sm:w-full flex flex-col justify-center items-start px-5 py-10">
+          <h1 className="text-white lg:text-start md:text-start sm:text-start text-center text-4xl leading-snug font-bold mb-4">
             As an Employer of Record (EOR), what does the EOR Agency specialize
             in?
           </h1>
@@ -24,13 +24,13 @@ const LandingPage = () => {
             employment of your staff, we aim to save you valuable time, money,
             and resources.
           </p>
-          <button className="uppercase mt-3.5 py-4 px-16 bg-orange-600 rounded-md text-white font-bold">
+          <button className="uppercase mt-3.5 py-4 px-16 bg-orange-600 rounded-md text-white justify-center lg:w-[320px] md:w-[320px] sm:w-[320px] w-full font-bold">
             View our vacancies
           </button>
         </div>
 
         {/* Image Section */}
-        <div className="lg:w-1/2 sm:w-full mr-12 flex justify-center items-center">
+        <div className="lg:w-1/2 sm:w-full flex justify-center items-center">
           <Image
             src="/flipjob_person.png"
             alt="Hero"

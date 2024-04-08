@@ -2,15 +2,15 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className="flex lg:flex-row md:flex-row sm:flex-row flex-col px-5 items-center bg-gray-200/80">
+    <div className="flex lg:flex-row md:flex-row sm:flex-row flex-col px-5 py-10 items-center bg-gray-200/80">
       {/* Image Section */}
-      <div className="lg:w-1/2 sm:w-full my-20 flex justify-center items-center">
+      <div className="lg:w-1/2 sm:w-full flex items-center">
         <Image src="/about-us.jpg" alt="Hero" width={600} height={600} />
       </div>
       {/* Content Container */}
       <div className="lg:w-1/2 sm:w-full flex justify-between px-2 z-10">
         <div className="w-full flex flex-col justify-center items-start text-justify">
-          <h1 className="text-xl uppercase mb-5 text-green-900 tracking-wider">
+          <h1 className="text-xl uppercase lg:my-0 md:my-0 sm:my-0 my-5 text-green-900 tracking-wider">
             About Us
           </h1>
           <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold mb-5 text-gray-800">

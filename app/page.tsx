@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <>
       {/* @Top Section */}
-      {/* <LandingPage /> */}
+      <LandingPage />
       {/* @About Us */}
-      <AboutUs />
+      {/* <AboutUs /> */}
       {/* @Services */}
       {/* <Services /> */}
       {/* @Contact */}
