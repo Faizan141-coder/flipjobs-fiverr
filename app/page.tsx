@@ -24,7 +24,7 @@ export default function Home() {
       {/* @Contact */}
       <Contact />
       {/* @Newsletter */}
-      {/* <NewsLetter /> */}
+      <NewsLetter />
     </>
   );
 }
