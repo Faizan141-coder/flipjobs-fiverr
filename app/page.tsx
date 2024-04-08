@@ -22,7 +22,7 @@ export default function Home() {
       {/* @Services */}
       <Services />
       {/* @Contact */}
-      {/* <Contact /> */}
+      <Contact />
       {/* @Newsletter */}
       {/* <NewsLetter /> */}
     </>
