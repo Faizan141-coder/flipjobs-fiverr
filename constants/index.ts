@@ -9,14 +9,14 @@ export const navLinks = [
   },
   {
     route: "/",
-    label: "Vacancies",
-  },
-  {
-    route: "/",
-    label: "Housing",
+    label: "Services",
   },
   {
     route: "/",
     label: "Contact us",
+  },
+  {
+    route: "/",
+    label: "Newsletter",
   },
 ];
