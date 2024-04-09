@@ -24,7 +24,7 @@ const LandingPage = () => {
             employment of your staff, we aim to save you valuable time, money,
             and resources.
           </p>
-          <button className="uppercase mt-3.5 py-4 px-16 bg-green-600 hover:bg-green-700 transition duration-100 ease-in rounded-md text-white justify-center lg:w-[320px] md:w-[320px] sm:w-[320px] w-full font-bold">
+          <button className="uppercase mt-3.5 py-4 px-16  bg-green-600 hover:bg-green-700 transition duration-100 ease-in rounded-md text-white justify-center lg:w-[320px] md:w-[320px] sm:w-[320px] w-full font-bold lg:text-[16px] md:text-[16px] sm:text-[16px] text-[14px]">
             View our vacancies
           </button>
         </div>
