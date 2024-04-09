@@ -5,7 +5,7 @@ const NewsLetter = () => {
   return (
     <div className="relative flex items-center">
       {/* Blue Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-[#1a1164]" />
+      <div className="absolute top-0 left-0 w-full h-full bg-[#116436]" />
 
       {/* Content Container */}
       <div className="relative w-full flex lg:flex-row md:flex-row sm:flex-row flex-col justify-between px-8 py-10 z-10">
@@ -47,9 +47,9 @@ const NewsLetter = () => {
           </div>
           <p className="mt-8">
             By submitting this form you agree to the{" "}
-            <span className="text-orange-600">privacy statement.</span>
+            <span className="text-green-500">privacy statement.</span>
           </p>
-          <button className="uppercase mt-8 py-2 px-16 bg-orange-600 rounded-md text-white font-bold lg:w-[200px] md:w-[200px] sm:[200px] w-full">
+          <button className="uppercase mt-8 py-2 px-16 bg-green-600 hover:bg-green-700 transition duration-100 ease-in rounded-md text-white font-bold lg:w-[200px] md:w-[200px] sm:[200px] w-full">
             Submit
           </button>
         </div>

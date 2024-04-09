@@ -7,7 +7,7 @@ const LandingPage = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-[url('/bg.jpg')] bg-cover bg-center"></div>
 
       {/* Blue Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-[#231787] opacity-90"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-[#1e5631]/80 opacity-90"></div>
 
       {/* Content Container */}
       <div className="relative w-full flex lg:flex-row md:flex-row sm:flex-row flex-col justify-between px-8 z-10">
@@ -24,7 +24,7 @@ const LandingPage = () => {
             employment of your staff, we aim to save you valuable time, money,
             and resources.
           </p>
-          <button className="uppercase mt-3.5 py-4 px-16 bg-orange-600 rounded-md text-white justify-center lg:w-[320px] md:w-[320px] sm:w-[320px] w-full font-bold">
+          <button className="uppercase mt-3.5 py-4 px-16 bg-green-600 hover:bg-green-700 transition duration-100 ease-in rounded-md text-white justify-center lg:w-[320px] md:w-[320px] sm:w-[320px] w-full font-bold">
             View our vacancies
           </button>
         </div>

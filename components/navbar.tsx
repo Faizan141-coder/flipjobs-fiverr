@@ -26,7 +26,7 @@ const Navbar = () => {
                 key={link.route}
                 className={`${
                   isActive &&
-                  "text-green-500 hover:text-green-700 hover:scale-110 transition-transform duration-200"
+                  "text-green-600 hover:text-green-700 hover:scale-110 transition-transform duration-200"
                 } flex-center p-medium-16 whitespace-nowrap`}
               >
                 <Link href={link.route}>{link.label}</Link>

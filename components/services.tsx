@@ -1,3 +1,4 @@
+import { BookUser, HandCoins, ScrollText } from "lucide-react";
 import Image from "next/image";
 
 const Services = () => {
@@ -8,12 +9,7 @@ const Services = () => {
       </h1>
       <div className="flex pb-10 px-20 lg:space-x-24 md:space-x-14 sm:space-x-10 space-x-0 lg:flex-row md:flex-row sm:flex-row flex-col items-center justify-center">
         <div className="w-full text-center flex space-y-6 flex-col items-center justify-center">
-          <Image
-            src="/icons_website-01.png"
-            alt="Icon 1"
-            width={100}
-            height={24}
-          />
+          <BookUser size={80} strokeWidth='1px' color="green" />
           <h1 className="font-bold text-2xl">Employer of record services</h1>
           <p className="text-sm leading-7">
             Utilize our Employer of Record solutions to legally hire
@@ -22,12 +18,7 @@ const Services = () => {
           </p>
         </div>
         <div className="w-full text-center flex space-y-6 flex-col items-center justify-center">
-          <Image
-            src="/icons_website-03.png"
-            alt="Icon 1"
-            width={100}
-            height={24}
-          />
+          <HandCoins size={80} strokeWidth='1px' color="green" />
           <h1 className="font-bold text-2xl">Payroll services</h1>
           <p className="text-sm leading-7">
             We offer assistance in ensuring compliant and timely payment for
@@ -36,12 +27,7 @@ const Services = () => {
           </p>
         </div>
         <div className="w-full text-center flex space-y-6 flex-col items-center justify-center">
-          <Image
-            src="/icons_website-02.png"
-            alt="Icon 1"
-            width={100}
-            height={24}
-          />
+          <ScrollText size={80} strokeWidth='1px' color="green" />
           <h1 className="font-bold text-2xl">Work permits</h1>
           <p className="text-sm leading-7">
             Do you need assistance in obtaining work permits for your
