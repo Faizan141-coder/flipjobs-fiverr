@@ -11,12 +11,12 @@ export const navLinks = [
     route: "/",
     label: "Services",
   },
+  // {
+  //   route: "/",
+  //   label: "Contact us",
+  // },
   {
     route: "/",
-    label: "Contact us",
-  },
-  {
-    route: "/",
-    label: "Newsletter",
+    label: "Learn more",
   },
 ];

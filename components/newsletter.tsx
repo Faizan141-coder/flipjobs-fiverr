@@ -3,7 +3,7 @@ import { Input } from "./ui/input";
 
 const NewsLetter = () => {
   return (
-    <div className="relative flex items-center">
+    <div id="newsletter-section" className="relative flex items-center">
       {/* Blue Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-[#116436]" />
 
