@@ -32,7 +32,7 @@ const LandingPage = () => {
         {/* Image Section */}
         <div className="lg:w-1/2 sm:w-full flex justify-center items-center">
           <Image
-            src="/flipjob_person.png"
+            src="/eor_person.png"
             alt="Hero"
             width={380}
             height={380}

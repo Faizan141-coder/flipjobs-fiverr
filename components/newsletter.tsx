@@ -12,7 +12,7 @@ const NewsLetter = () => {
         {/* Image Section */}
         <div className="lg:w-1/2 sm:w-full flex justify-center items-center lg:pr-8 md:pr-5 sm:pr-4 pr-0">
           <Image
-            src="/flipjob_person.png"
+            src="/eor_person.png"
             alt="Hero"
             width={450}
             height={450}
