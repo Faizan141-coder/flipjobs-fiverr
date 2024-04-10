@@ -16,7 +16,7 @@ const Navbar = () => {
           height={200}
         />
       </div>
-      <div className="py-9 space-x-10 font-semibold hidden sm:flex">
+      {/* <div className="py-9 space-x-10 font-semibold hidden sm:flex">
         <ul className="flex w-full lg:text-lg md:text-[16px] sm:text-[12px] flex-col items-start lg:gap-10 md:gap-5 sm:gap-5 lg:flex-row md:flex-row sm:flex-row">
           {navLinks.map((link) => {
             const isActive = pathname === link.route;
@@ -35,7 +35,7 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-      <MobileNav pathname={pathname} />
+      <MobileNav pathname={pathname} /> */}
     </div>
   );
 };
