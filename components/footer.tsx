@@ -3,7 +3,7 @@ const Footer = () => {
     <div className="flex justify-center items-center">
       <div className="flex p-9">
         <h1 className="cursor-pointer text-green-950">
-          Copyright © 2024 EOR Agency
+          Große Str. 53, 47559 Kranenburg, Germany
         </h1>
       </div>
     </div>

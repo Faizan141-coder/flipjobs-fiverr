@@ -8,7 +8,7 @@ const NewsLetter = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-[#116436]" />
 
       {/* Content Container */}
-      <div className="relative w-full flex lg:flex-row md:flex-row sm:flex-row flex-col justify-between px-8 py-10 z-10">
+      <div className="relative w-full flex lg:flex-row md:flex-row sm:flex-row flex-col justify-between px-8 z-10">
         {/* Image Section */}
         <div className="lg:w-1/2 sm:w-full flex justify-center items-center lg:pr-8 md:pr-5 sm:pr-4 pr-0">
           <Image
