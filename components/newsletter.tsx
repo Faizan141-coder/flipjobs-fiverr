@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Input } from "./ui/input";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const NewsLetter = () => {
   const [companyName, setCompanyName] = useState<string>('');
@@ -21,8 +22,10 @@ const NewsLetter = () => {
         }),
       });
       console.log(data);
+      toast.success("Email sent successfully");
     } catch (error) {
       console.error("Error:", error);
+      toast.error("Error sending email");
     }
   };
 
