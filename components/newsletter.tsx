@@ -1,7 +1,31 @@
+'use client'
+
 import Image from "next/image";
 import { Input } from "./ui/input";
+import { useState } from "react";
 
 const NewsLetter = () => {
+  const [companyName, setCompanyName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  
+  const sendEmail = async () => {
+    try {
+      const data = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          companyName: companyName,
+          email: email,
+        }),
+      });
+      console.log(data);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
   return (
     <div id="newsletter-section" className="relative flex items-center">
       {/* Blue Overlay */}
@@ -11,12 +35,7 @@ const NewsLetter = () => {
       <div className="relative w-full flex lg:flex-row md:flex-row sm:flex-row flex-col justify-between px-8 lg:py-0 md:py-0 sm:py-0 py-10 z-10">
         {/* Image Section */}
         <div className="lg:w-1/2 sm:w-full flex justify-center items-center lg:pr-8 md:pr-5 sm:pr-4 pr-0">
-          <Image
-            src="/eor_person.png"
-            alt="Hero"
-            width={450}
-            height={450}
-          />
+          <Image src="/eor_person.png" alt="Hero" width={450} height={450} />
         </div>
 
         {/* Text Section */}
@@ -33,6 +52,9 @@ const NewsLetter = () => {
               <label htmlFor="email">Company name</label>
               <Input
                 type="text"
+                name="company-name"
+                value={companyName}
+                onChange={(e) => setCompanyName(e.target.value)}
                 className="w-full px-3 py-2 border bg-gray-100 text-black rounded-lg placeholder-gray-900 focus:outline-none border-gray-400"
               />
             </div>
@@ -41,6 +63,9 @@ const NewsLetter = () => {
               <label htmlFor="email">Email address</label>
               <Input
                 type="email"
+                name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-3 py-2 border bg-gray-100 text-black rounded-lg placeholder-gray-900 focus:outline-none border-gray-400"
               />
             </div>
@@ -49,7 +74,7 @@ const NewsLetter = () => {
             By submitting this form you agree to the{" "}
             <span className="text-green-500">privacy statement.</span>
           </p>
-          <button className="uppercase mt-8 py-2 px-16 bg-green-600 hover:bg-green-700 transition duration-100 ease-in rounded-md text-white font-bold lg:w-[200px] md:w-[200px] sm:[200px] w-full">
+          <button onClick={sendEmail} className="uppercase mt-8 py-2 px-16 bg-green-600 hover:bg-green-700 transition duration-100 ease-in rounded-md text-white font-bold lg:w-[200px] md:w-[200px] sm:[200px] w-full">
             Submit
           </button>
         </div>

@@ -20,7 +20,7 @@ const Contact = () => {
           </div>
           <div className="ml-7">
             <Image
-              src="/flipjob_person.png"
+              src="/eor_person.png"
               alt="Hero"
               width={200}
               height={200}
