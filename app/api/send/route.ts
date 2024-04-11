@@ -13,7 +13,7 @@ export async function POST(request: Request) {
     const { companyName, email }: RequestBody = await request.json();
     const data = await resend.emails.send({
       from: 'EOR Agency <onboarding@resend.dev>' as string,
-      to: ['faizanhasnaat13@gmail.com'] as string[],
+      to: ['hr@eoragency.de'] as string[],
       subject: 'New Consultation Request' as string,
       react: EmailTemplate({ companyName, email }) as string,
     });
